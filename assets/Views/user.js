@@ -17,9 +17,11 @@ $(document).ready(() => {
   const compiledUserTemplate = Handlebars.compile(userTemplate);
 
   $.get(URL, (res) => {
-    usersData = res;
+    // usersData = res;
     // if (queryString) {
-      $('#usersList').append(compiledUserTemplate(usersData[0]));
+    res.forEach((entry) => {
+      $('#usersList').append(compiledUserTemplate(entry));
+    });
     // } else {
     //   usersData.forEach((user, i) => {
     //     $('#usersList').append(compiledUserTemplate(user));
