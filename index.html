@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+  <title>Favorite Trails</title>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+
+
+</head>
+
+<body>
+
+  <nav>
+  <div class="nav-wrapper #2e7d32 green darken-3">
+    <a href="#" class="brand-logo center">Trails Admins</a>
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li><a href="index.html">Users</a></li>
+      <li><a href="user.html">User</a></li>
+      <li><a href="create.html">Create</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <script id="user-template" type="text/x-handlebars-template">
+    <h2>User: {{id}}</h1>
+    <div class="card hoverable">
+      <ul>
+        <li>Email: {{email}}</li>
+        <li>Password: {{password}}</li>
+        <li>Online: {{is_active}}</li>
+      </ul>
+    </div>
+  </script>
+
+  <main id='usersList'>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script src="./assets/Views/index.js"></script>
+
+</body>
+
+</html>

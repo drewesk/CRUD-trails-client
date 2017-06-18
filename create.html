@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+  <title>Favorite Trails</title>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+</head>
+
+<body>
+
+  <nav>
+  <div class="nav-wrapper #2e7d32 green darken-3">
+    <a href="#" class="brand-logo center">Trails Admins</a>
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li><a href="index.html">Users</a></li>
+      <li><a href="user.html">User</a></li>
+      <li><a href="create.html">Create</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <h1>Add a Trail</h1>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="user" type="user" class="validate">
+        <label for="user">userID</label>
+      </div>
+    </div>
+     <div class="row">
+       <div class="input-field col s12">
+         <input id="name" type="name" class="validate">
+         <label for="name">Trail Name</label>
+       </div>
+     </div>
+     <div class="row">
+       <div class="input-field col s12">
+         <input id="rating" type="rating" class="validate">
+         <label for="rating">Rating</label>
+       </div>
+     </div>
+     <div class="row">
+       <div class="input-field col s12">
+         <input id="length" type="length" class="validate">
+         <label for="length">Length</label>
+       </div>
+     </div>
+
+     <a id='createEntry' class="waves-effect waves-light btn">Create Entry</a>
+   </form>
+ </div>
+
+  <main id='usersList'>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script src="assets/Views/create.js"></script>
+
+</body>
+
+</html>
